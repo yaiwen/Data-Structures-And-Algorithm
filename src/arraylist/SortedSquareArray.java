@@ -18,7 +18,7 @@ public class SortedSquareArray {
         int largerIdx = array.length - 1;
 
         int[] newArray = new int[array.length];
-        for (int i=array.length-1; i>0; i--) {
+        for (int i=array.length-1; i>=0; i--) {
             int smallerValue = Math.abs(array[smallerIdx]);
             int largerValue = Math.abs(array[largerIdx]);
             if (smallerValue > largerValue) {
@@ -29,7 +29,6 @@ public class SortedSquareArray {
                 largerIdx--;
             }
         }
-        newArray[0] = Math.abs(array[smallerIdx]) * Math.abs(array[smallerIdx]);
         return newArray;
     }
 }
