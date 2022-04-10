@@ -14,26 +14,22 @@ public class SortedSquareArray {
     }
 
     public static int[] sortedSquaredArray(int[] array) {
-        int idx = 0;
         int smallerIdx = 0;
         int largerIdx = array.length - 1;
-        int newLargerIdx = array.length - 1;
 
         int[] newArray = new int[array.length];
-        while (idx < array.length) {
-            int smallerIndexNum = Math.abs(array[smallerIdx]);
-            int largerIndexNum = Math.abs(array[largerIdx]);
-            if (smallerIndexNum > largerIndexNum) {
-                newArray[newLargerIdx] = smallerIndexNum * smallerIndexNum;
+        for (int i=array.length-1; i>0; i--) {
+            int smallerValue = Math.abs(array[smallerIdx]);
+            int largerValue = Math.abs(array[largerIdx]);
+            if (smallerValue > largerValue) {
+                newArray[i] = smallerValue * smallerValue;
                 smallerIdx++;
-                newLargerIdx--;
-            } else  {
-                newArray[newLargerIdx] = largerIndexNum * largerIndexNum;
+            } else {
+                newArray[i] = largerValue * largerValue;
                 largerIdx--;
-                newLargerIdx--;
             }
-            idx++;
         }
+        newArray[0] = Math.abs(array[smallerIdx]) * Math.abs(array[smallerIdx]);
         return newArray;
     }
 }
