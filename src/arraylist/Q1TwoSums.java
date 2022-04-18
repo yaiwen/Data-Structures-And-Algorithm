@@ -2,8 +2,9 @@ package arraylist;
 
 import java.util.Arrays;
 
-public class TwoSums {
+public class Q1TwoSums {
 
+    // LeetCode 1. Two Sum
     // Time Complexity: O (n log n)
     // Space Complexity: O(1)
     public static void main(String[] args)  {

@@ -4,8 +4,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public class SortedSquareArray {
+public class Q977SortedSquareArray {
 
+    // LeetCode 977. Squares of Sorted Array
     // Time Complexity: O(n) to traverse the main array
     // Space Complexity: O(n) need to create a new int[] array
     public static void main(String[] args)  {
