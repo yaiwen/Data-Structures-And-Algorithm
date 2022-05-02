@@ -1,10 +1,11 @@
-package arraylist;
+package leetcode.arraylist.easy;
 
 import java.util.Arrays;
 
 public class Q1TwoSums {
 
     // LeetCode 1. Two Sum
+    // https://leetcode.com/problems/two-sum/
     // Time Complexity: O (n log n)
     // Space Complexity: O(1)
     public static void main(String[] args)  {

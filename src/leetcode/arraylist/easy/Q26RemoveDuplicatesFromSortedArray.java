@@ -1,8 +1,9 @@
-package arraylist;
+package leetcode.arraylist.easy;
 
 public class Q26RemoveDuplicatesFromSortedArray {
 
     // LeetCode 26. Remove Duplicates From Sorted Array
+    // https://leetcode.com/problems/remove-duplicates-from-sorted-array/
     // Time Complexity: O(n) length of input nums
     // Space Complexity: O(1)
     public static void main(String[] args)  {

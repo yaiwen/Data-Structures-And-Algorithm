@@ -1,12 +1,11 @@
-package arraylist;
+package leetcode.arraylist.easy;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
 
 public class Q1929ConcatenationOfArray {
 
     // LeetCode 1929. ConcatenationOfArray
+    // https://leetcode.com/problems/concatenation-of-array/
     // Time Complexity: O(n) length of nums size
     // Space Complexity: O(n) int[] created
     public static void main(String[] args)  {
