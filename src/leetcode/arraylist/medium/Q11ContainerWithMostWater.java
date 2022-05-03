@@ -1,7 +1,5 @@
 package leetcode.arraylist.medium;
 
-import java.util.Arrays;
-
 public class Q11ContainerWithMostWater {
 
     // LeetCode 11. Container With Most Water
